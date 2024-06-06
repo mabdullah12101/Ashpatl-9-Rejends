@@ -1,0 +1,50 @@
+.color-white {
+    color: white;
+}
+
+.font-primary {
+    font-family: "Rajdhani", sans-serif;
+    font-style: normal;
+}
+
+.font-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-sm {
+    font-size: 1.5rem;
+}
+
+.font-md {
+    font-size: 1.7rem;
+}
+
+.font-lg {
+    font-size: 2.5rem;
+}
+
+.font-xl {
+    font-size: 3rem;
+}
+
+.leading-normal {
+    line-height: 1.5;
+}

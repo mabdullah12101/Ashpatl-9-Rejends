@@ -1,0 +1,225 @@
+*[disabled] {
+    cursor: not-allowed;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-video {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header-logo {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: var(--gap-spacing);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-items {
+    padding-top: var(--gap-spacing);
+    padding-right: var(--gap-spacing);
+    display: flex;
+    justify-content: end;
+    gap: 2.5rem;
+}
+
+#gameplay {
+    height: 640px;
+    background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.90) 45.79%, rgba(87, 87, 87, 0.27) 81.5%), url(../assets/image/car-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    .gameplay-content {
+        width: 45%;
+        height: 100%;
+        padding-left: var(--gap-spacing);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+}
+
+
+.main-bg {
+    position: relative;
+    background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.45), rgba(15, 15, 15, 0.45)), url(../assets/image/main-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 150px;
+    padding-bottom: 250px;
+    padding-inline: var(--gap-spacing);
+}
+
+.carousel {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.slide-container {
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-active {
+    transform: translateX(0%) !important;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    gap: 120px;
+    transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.slide-content {
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.slide-title {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.slide-subtitle {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.slide-image {
+    width: 50%;
+    position: relative;
+
+    img {
+        position: relative;
+    }
+}
+
+.line-slide {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 70%;
+    margin-block: 0;
+    margin-top: 30px;
+    border: 1px solid #FFD369;
+}
+
+.carousel-right {
+    .slide {
+        transform: translateX(100%);
+    }
+
+    .line-slide {
+        right: 0;
+        margin-right: -5rem;
+    }
+}
+
+.carousel-left {
+    .slide {
+        flex-direction: row-reverse;
+        transform: translateX(-100%);
+    }
+
+    .line-slide {
+        left: 0;
+        margin-left: -5rem;
+    }
+
+    .slide-pagination {
+        margin-left: auto;
+    }
+}
+
+.slide-pagination {
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.slide-btn-next-prev {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 4rem;
+}
+
+.slide-btn-pagination {
+    width: 50px;
+    height: 4px;
+    padding: 0;
+    border: none;
+    color: transparent;
+    background-color: #FFD369;
+}
+
+.slide-btn-pagination-active {
+    height: 7px !important;
+}
+
+footer {
+    background-color: rgba(15, 15, 15, 0.80);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-branding {
+    padding-inline: 80px;
+    padding-block: 50px;
+}
+
+.nav-socmed {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icon-socmed {
+    height: 70px;
+}
