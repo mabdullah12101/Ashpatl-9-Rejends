@@ -20,7 +20,11 @@
 </head>
 
 <body class="font-primary font-medium font-sm color-white">
-    <header>
+    <div id="loading" class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header class="hidden">
         <div class="header-content">
             <nav>
                 <ul class="nav-items font-primary-bold font-md">
@@ -46,7 +50,7 @@
         <video src="./assets/media/bg-header.mp4" class="header-video" autoplay muted loop></video>
     </header>
 
-    <main>
+    <main class="hidden">
         <section id="gameplay">
             <div class="gameplay-content">
                 <p class="font-bold font-xl">Gameplay</p>
@@ -332,6 +336,7 @@
     </main>
 
 
+    <script src="./index.js"></script>
     <script src="./js/utilities/carousel.js"></script>
 </body>
 
