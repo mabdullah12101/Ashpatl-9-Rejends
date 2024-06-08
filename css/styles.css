@@ -45,7 +45,7 @@ header {
 }
 
 .nav-items {
-    padding-top: var(--gap-spacing);
+    padding-top: 1.5rem;
     padding-right: var(--gap-spacing);
     display: flex;
     justify-content: end;
@@ -232,7 +232,7 @@ footer {
 }
 
 .footer-branding {
-    padding-inline: 80px;
+    padding-inline: var(--gap-spacing);
     padding-block: 50px;
     display: flex;
     align-items: center;
@@ -275,8 +275,8 @@ footer {
 }
 
 .footer-copyright {
+    padding-inline: var(--gap-spacing);
     padding-block: 10px;
-    padding-inline: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
