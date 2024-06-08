@@ -21,21 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const init = () => {
             slides[currentIndex].classList.add('slide-active')
-            updateHeightSlideContainer()
             updateDisableSlideBtn()
             renderSlidePaginationBtn()
         }
 
 
-        const updateHeightSlideContainer = () => {
-            slideContainer.style.height = `${slideContainer.querySelector('.slide-active').offsetHeight}px`
-        }
-
         const updateSlide = () => {
             slides[prevIndex].classList.remove('slide-active')
             slides[currentIndex].classList.add('slide-active')
 
-            updateHeightSlideContainer()
             updateDisableSlideBtn()
             updateDisableSlideBtnPagination()
         }

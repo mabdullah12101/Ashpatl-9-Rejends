@@ -52,6 +52,28 @@ header {
     gap: 2.5rem;
 }
 
+.nav-item {
+    position: relative;
+    padding-block: 5px;
+}
+
+.nav-item::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #FFD369;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 2px;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-item:hover::after,
+.nav-item-active::after {
+    width: 85%;
+}
+
 #gameplay {
     height: 640px;
     background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.90) 45.79%, rgba(87, 87, 87, 0.27) 81.5%), url(../assets/image/car-1.png);
@@ -78,7 +100,7 @@ header {
     background-size: cover;
     background-position: bottom;
     padding-top: 150px;
-    padding-bottom: 250px;
+    padding-bottom: 600px;
     padding-inline: var(--gap-spacing);
 }
 
@@ -88,6 +110,7 @@ header {
 }
 
 .slide-container {
+    height: 400px;
     z-index: 2;
     width: 100%;
     overflow: hidden;
@@ -112,7 +135,7 @@ header {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .slide-title {
@@ -211,15 +234,62 @@ footer {
 .footer-branding {
     padding-inline: 80px;
     padding-block: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.socmed-store {
+    width: 50%;
+}
+
+.official-account {
+    margin-bottom: 80px;
 }
 
 .nav-socmed {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
 .icon-socmed {
-    height: 70px;
+    height: 50px;
+}
+
+.nav-store {
+    margin-top: 30px;
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+}
+
+.nav-store img {
+    width: 100%;
+}
+
+.footer-logo {
+    width: 50%;
+}
+
+.footer-copyright {
+    padding-block: 10px;
+    padding-inline: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-content {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .term-policy {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
 }
