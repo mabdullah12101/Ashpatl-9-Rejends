@@ -31,12 +31,24 @@ header {
     object-position: center;
 }
 
-.header-logo {
+.header-brand {
     position: absolute;
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
     left: var(--gap-spacing);
+}
+
+.btn-play-now {
+    margin-top: 20px;
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 15px;
+    display: block;
+    border: none;
+    background-color: #C40C0C;
+    color: white;
+    border-radius: 20px;
 }
 
 .header-content {
