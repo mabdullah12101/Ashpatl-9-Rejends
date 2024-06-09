@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         header.classList.remove('hidden');
     })
 
-    // Kondisi jika selama 20 detik masih blm tampil kontennya maka refresh halaman
+    // Kondisi jika selama 10 detik masih blm tampil kontennya maka refresh halaman
     setTimeout(() => {
         if (main.classList.contains('hidden')) {
             location.reload()
         }
-    }, [20000])
+    }, [10000])
 })
