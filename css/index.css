@@ -15,6 +15,10 @@ img {
     vertical-align: middle;
 }
 
+.logo-img {
+    width: 450px;
+}
+
 header {
     position: relative;
     width: 100%;
@@ -31,26 +35,6 @@ header {
     object-position: center;
 }
 
-.header-brand {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    left: var(--gap-spacing);
-}
-
-.btn-play-now {
-    margin-top: 20px;
-    width: 80%;
-    margin-inline: auto;
-    padding-block: 15px;
-    display: block;
-    border: none;
-    background-color: #C40C0C;
-    color: white;
-    border-radius: 20px;
-}
-
 .header-content {
     position: relative;
     z-index: 1;
@@ -58,7 +42,6 @@ header {
 
 .nav-items {
     padding-top: 1.5rem;
-    padding-right: var(--gap-spacing);
     display: flex;
     justify-content: end;
     gap: 2.5rem;
@@ -86,6 +69,26 @@ header {
     width: 85%;
 }
 
+.header-brand {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.btn-play-now {
+    margin-top: 20px;
+    padding-block: 20px;
+    padding-inline: 100px;
+    display: block;
+    border: none;
+    background-color: #C40C0C;
+    color: white;
+    border-radius: 20px;
+}
+
 #gameplay {
     height: 640px;
     background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.90) 45.79%, rgba(87, 87, 87, 0.27) 81.5%), url(../assets/image/car-1.png);
@@ -96,7 +99,6 @@ header {
     .gameplay-content {
         width: 45%;
         height: 100%;
-        padding-left: var(--gap-spacing);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -104,8 +106,8 @@ header {
     }
 }
 
-
 .main-bg {
+    overflow-x: hidden;
     position: relative;
     background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.45), rgba(15, 15, 15, 0.45)), url(../assets/image/main-bg.png);
     background-repeat: no-repeat;
@@ -113,7 +115,6 @@ header {
     background-position: bottom;
     padding-top: 150px;
     padding-bottom: 600px;
-    padding-inline: var(--gap-spacing);
 }
 
 .carousel {
@@ -122,7 +123,7 @@ header {
 }
 
 .slide-container {
-    height: 400px;
+    height: 440px;
     z-index: 2;
     width: 100%;
     overflow: hidden;
@@ -138,34 +139,24 @@ header {
     width: 100%;
     height: max-content;
     display: flex;
-    gap: 120px;
+    flex-direction: column-reverse;
+    gap: 30px;
     transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .slide-content {
-    margin-top: 50px;
-    width: 50%;
+
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-}
-
-.slide-title {
-    font-weight: 600;
-    font-size: 3rem;
-}
-
-.slide-subtitle {
-    font-weight: 500;
-    font-size: 2.5rem;
+    gap: 1rem;
 }
 
 .slide-image {
-    width: 50%;
     position: relative;
 
     img {
         position: relative;
+        width: 100%;
     }
 }
 
@@ -192,7 +183,6 @@ header {
 
 .carousel-left {
     .slide {
-        flex-direction: row-reverse;
         transform: translateX(-100%);
     }
 
@@ -200,15 +190,10 @@ header {
         left: 0;
         margin-left: -5rem;
     }
-
-    .slide-pagination {
-        margin-left: auto;
-    }
 }
 
 .slide-pagination {
     margin-top: 10px;
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +229,6 @@ footer {
 }
 
 .footer-branding {
-    padding-inline: var(--gap-spacing);
     padding-block: 50px;
     display: flex;
     align-items: center;
@@ -262,11 +246,11 @@ footer {
     margin-top: 30px;
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
 }
 
 .icon-socmed {
-    height: 50px;
+    height: 30px;
 }
 
 .nav-store {
@@ -274,7 +258,7 @@ footer {
     display: grid;
     align-items: center;
     gap: 1rem;
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 80px);
     grid-template-rows: repeat(2, minmax(min-content, max-content));
 }
 
@@ -284,11 +268,14 @@ footer {
 
 .footer-logo {
     width: 50%;
+
+    img {
+        width: 100%;
+    }
 }
 
 .footer-copyright {
-    padding-inline: var(--gap-spacing);
-    padding-block: 10px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -302,6 +289,198 @@ footer {
             display: flex;
             align-items: center;
             gap: 8px;
+
+            img {
+                width: 7px;
+            }
+        }
+    }
+}
+
+.logo-gameloft {
+    width: 100px;
+}
+
+@media (min-width: 640px) {
+    .btn-play-now {
+        padding-block: 20px;
+        padding-inline: 70px;
+    }
+
+    .carousel-right {
+        .line-slide {
+            margin-right: -1rem;
+        }
+    }
+
+    .carousel-left {
+        .line-slide {
+            margin-left: -1rem;
+        }
+
+        .slide-pagination {
+            margin-left: auto;
+        }
+    }
+
+    .slide-container {
+        height: 360px;
+    }
+
+    .slide {
+        flex-direction: row;
+        gap: 120px;
+    }
+
+    .slide-content {
+        gap: 3rem;
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    .slide-image {
+        width: 50%;
+    }
+
+    .carousel-left {
+        .slide {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .slide-pagination {
+        width: 50%;
+    }
+
+    .icon-socmed {
+        height: 30px;
+    }
+
+    .nav-store {
+        grid-template-columns: repeat(2, 100px);
+    }
+
+    .logo-gameloft {
+        width: 150px;
+    }
+
+    .term-policy {
+        img {
+            width: 10px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-play-now {
+        padding-inline: 80px;
+    }
+
+    .icon-socmed {
+        height: 40px;
+    }
+
+    .nav-store {
+        grid-template-columns: repeat(2, 130px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo-img {
+        width: 500px;
+    }
+
+    .btn-play-now {
+        padding-inline: 100px;
+    }
+
+    .carousel-right {
+        .line-slide {
+            margin-right: -4rem;
+        }
+    }
+
+    .carousel-left {
+        .line-slide {
+            margin-left: -4rem;
+        }
+    }
+
+    .slide-container {
+        height: 385px;
+    }
+
+    .slide-content {
+        gap: 4rem;
+    }
+
+    .icon-socmed {
+        height: 45px;
+    }
+
+    .nav-store {
+        grid-template-columns: repeat(2, 140px);
+    }
+
+    .logo-gameloft {
+        width: 160px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .logo-img {
+        width: 630px;
+    }
+
+    .carousel-right {
+        .line-slide {
+            margin-right: -4.5rem;
+        }
+    }
+
+    .carousel-left {
+        .line-slide {
+            margin-left: -4.5rem;
+        }
+    }
+
+    .slide-container {
+        height: 440px;
+    }
+
+    .slide-content {
+        gap: 5rem;
+    }
+
+    .icon-socmed {
+        height: 50px;
+    }
+
+    .nav-store {
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .logo-gameloft {
+        width: 180px;
+    }
+
+    .term-policy {
+        img {
+            width: 15px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .carousel-right {
+        .line-slide {
+            margin-right: -5rem;
+        }
+    }
+
+    .carousel-left {
+        .line-slide {
+            margin-left: -5rem;
         }
     }
 }

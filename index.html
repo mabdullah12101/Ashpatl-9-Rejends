@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/utilities.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
     </div>
 
     <header class="hidden">
-        <div class="header-content">
+        <div class="header-content container">
             <nav>
                 <ul class="nav-items font-primary-bold font-md">
                     <li class="nav-item nav-item-active">
@@ -47,8 +47,8 @@
             </nav>
         </div>
 
-        <div class="header-brand">
-            <img src="./assets/image/logo.png" class="header-logo" alt="logo">
+        <div class="header-brand container">
+            <img src="./assets/image/logo.png" class="logo-img" alt="logo">
             <button type="button" class="font-bold font-xl btn-play-now">Play Now</button>
         </div>
         <video src="./assets/media/bg-header.mp4" class="header-video" autoplay muted loop></video>
@@ -56,206 +56,222 @@
 
     <main class="hidden">
         <section id="gameplay">
-            <div class="gameplay-content">
-                <p class="font-bold font-xl">Gameplay</p>
-                <p class=" leading-normal">With better visuals, more intricate courses, and a wider range
-                    of vehicles, it
-                    expands on the
-                    popularity of its Asphalt series predecessors to provide an even better racing experience.</p>
+            <div class="container h-full">
+                <div class="gameplay-content">
+                    <p class="font-bold font-xl">Gameplay</p>
+                    <p class=" leading-normal">With better visuals, more intricate courses, and a wider range
+                        of vehicles, it
+                        expands on the
+                        popularity of its Asphalt series predecessors to provide an even better racing experience.</p>
+                </div>
             </div>
         </section>
 
         <div class="main-bg">
-            <section class="carousel carousel-right" id="game-modes">
-                <div class="slide-container">
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Game Modes</p>
-                            <p class="slide-subtitle">Career Mode</p>
-                            <p class="slide-description">Players can earn new cars and upgrades in this mode by
-                                finishing numerous races, which is a narratively driven progression system. There are
-                                goals for every race in career mode, such finishing first, pulling off certain feats, or
-                                setting a personal record.</p>
-                        </div>
+            <div class="container">
+                <section class="carousel carousel-right" id="game-modes">
+                    <div class="slide-container">
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Game Modes</p>
+                                <p class="font-medium font-lg">Career Mode</p>
+                                <p class="slide-description">Players can earn new cars and upgrades in this mode by
+                                    finishing numerous races, which is a narratively driven progression system. There
+                                    are
+                                    goals for every race in career mode, such finishing first, pulling off certain
+                                    feats, or
+                                    setting a personal record.</p>
+                            </div>
 
-                        <div class="slide-image">
-                            <img src="./assets/image/game-modes-1.png" alt="game modes 1">
+                            <div class="slide-image">
+                                <img src="./assets/image/game-modes-1.png" alt="game modes 1">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Game Modes</p>
+                                <p class="font-medium font-lg">Multiplayer</p>
+                                <p class="slide-description">Players from all over the world can compete against one
+                                    another
+                                    in real time in this mode. Players can test their abilities against actual opponents
+                                    in
+                                    multiplayer races and go up the worldwide leaderboards.</p>
+                            </div>
+
+                            <div class="slide-image">
+                                <img src="./assets/image/game-modes-2.png" alt="game modes 2">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Game Modes</p>
+                                <p class="font-medium font-lg">Events</p>
+                                <p class="slide-description">There are some time-limited activities with exclusive
+                                    benefits.
+                                    These events frequently provide distinctive challenges as well as chances to win
+                                    rare
+                                    vehicles or merchandise.</p>
+                            </div>
+
+                            <div class="slide-image">
+                                <img src="./assets/image/game-modes-3.png" alt="game modes 3">
+                            </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Game Modes</p>
-                            <p class="slide-subtitle">Multiplayer</p>
-                            <p class="slide-description">Players from all over the world can compete against one another
-                                in real time in this mode. Players can test their abilities against actual opponents in
-                                multiplayer races and go up the worldwide leaderboards.</p>
-                        </div>
+                    <hr class="line-slide">
+                    <nav class="slide-pagination">
+                        <button type="button" class="slide-btn-next-prev slide-btn-prev">&lt;</button>
+                        <button type="button" class="slide-btn-next-prev slide-btn-next">&gt;</button>
+                    </nav>
+                </section>
+                <section class="carousel carousel-left" id="controls">
+                    <div class="slide-container">
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Controls</p>
+                                <p class="font-medium font-lg">Touchdrive</p>
+                                <p class="slide-description">A simple control scheme where the player concentrates on
+                                    timing
+                                    and path selection, leaving the steering to the game. For gamers that prefer to take
+                                    in
+                                    the action without obsessing about technical controls, this is perfect.</p>
+                            </div>
 
-                        <div class="slide-image">
-                            <img src="./assets/image/game-modes-2.png" alt="game modes 2">
+                            <div class="slide-image">
+                                <img src="./assets/image/controls-1.png" alt="controls 1">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Controls</p>
+                                <p class="font-medium font-lg">Manual Controls</p>
+                                <p class="slide-description">For those who want more control, a traditional control
+                                    system
+                                    that lets players steer, brake, and accelerate by hand offers a more hands-on
+                                    experience.</p>
+                            </div>
+
+                            <div class="slide-image">
+                                <img src="./assets/image/controls-2.png" alt="controls 2">
+                            </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Game Modes</p>
-                            <p class="slide-subtitle">Events</p>
-                            <p class="slide-description">There are some time-limited activities with exclusive benefits.
-                                These events frequently provide distinctive challenges as well as chances to win rare
-                                vehicles or merchandise.</p>
-                        </div>
+                    <hr class="line-slide">
+                    <nav class="slide-pagination">
+                        <button type="button" class="slide-btn-next-prev slide-btn-prev">&lt;</button>
+                        <button type="button" class="slide-btn-next-prev slide-btn-next">&gt;</button>
+                    </nav>
+                </section>
+                <section class="carousel carousel-right" id="race-types">
+                    <div class="slide-container">
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Race Types</p>
+                                <p class="font-medium font-lg">Classic</p>
+                                <p class="slide-description">Standard races in which first place is the objective.</p>
+                            </div>
 
-                        <div class="slide-image">
-                            <img src="./assets/image/game-modes-3.png" alt="game modes 3">
+                            <div class="slide-image">
+                                <img src="./assets/image/race-types-1.png" alt="race types 1">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Race Types</p>
+                                <p class="font-medium font-lg">Time Attack</p>
+                                <p class="slide-description">Reach the finish line in a race against the time.</p>
+                            </div>
+
+                            <div class="slide-image">
+                                <img src="./assets/image/race-types-2.png" alt="race types 2">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Race Types</p>
+                                <p class="font-medium font-lg">Hunted</p>
+                                <p class="slide-description">Stay clear of police cruisers and cross the finish line in
+                                    the
+                                    allotted amount of time.</p>
+                            </div>
+
+                            <div class="slide-image">
+                                <img src="./assets/image/race-types-3.png" alt="race types 3">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Race Types</p>
+                                <p class="font-medium font-lg">Slipstream</p>
+                                <p class="slide-description">Gain speed by driving in the slipstream of other cars.</p>
+                            </div>
+
+                            <div class="slide-image">
+                                <img src="./assets/image/race-types-4.png" alt="race types 4">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <hr class="line-slide">
-                <nav class="slide-pagination">
-                    <button type="button" class="slide-btn-next-prev slide-btn-prev">&lt;</button>
-                    <button type="button" class="slide-btn-next-prev slide-btn-next">&gt;</button>
-                </nav>
-            </section>
-            <section class="carousel carousel-left" id="controls">
-                <div class="slide-container">
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Controls</p>
-                            <p class="slide-subtitle">Touchdrive</p>
-                            <p class="slide-description">A simple control scheme where the player concentrates on timing
-                                and path selection, leaving the steering to the game. For gamers that prefer to take in
-                                the action without obsessing about technical controls, this is perfect.</p>
-                        </div>
+                    <hr class="line-slide">
+                    <nav class="slide-pagination">
+                        <button type="button" class="slide-btn-next-prev slide-btn-prev">&lt;</button>
+                        <button type="button" class="slide-btn-next-prev slide-btn-next">&gt;</button>
+                    </nav>
+                </section>
+                <section class="carousel carousel-left" id="race-types">
+                    <div class="slide-container">
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Car Customization and Upgrades</p>
+                                <p class="font-medium font-lg">Blueprints</p>
+                                <p class="slide-description">To unlock and improve automobiles, gather blueprints. For
+                                    each
+                                    automobile to be upgraded or unlocked, a specific amount of blueprints must be
+                                    collected.</p>
+                            </div>
 
-                        <div class="slide-image">
-                            <img src="./assets/image/controls-1.png" alt="controls 1">
+                            <div class="slide-image">
+                                <img src="./assets/image/car-customization-upgrades-1.png"
+                                    alt="car customization upgrades 1">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Car Customization and Upgrades</p>
+                                <p class="font-medium font-lg">Customization</p>
+                                <p class="slide-description">Make your automobiles seem different by adding decals,
+                                    rims,
+                                    and paint jobs to give them a unique style.</p>
+                            </div>
+
+                            <div class="slide-image">
+                                <img src="./assets/image/car-customization-upgrades-2.png"
+                                    alt="car customization upgrades 2">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <p class="font-bold font-xl">Car Customization and Upgrades</p>
+                                <p class="font-medium font-lg">Performance Upgrades</p>
+                                <p class="slide-description">Improve the top speed, acceleration, handling, and nitro
+                                    efficiency of your cars to enhance performance on the track.</p>
+                            </div>
+
+                            <div class="slide-image">
+                                <img src="./assets/image/car-customization-upgrades-3.png"
+                                    alt="car customization upgrades 3">
+                            </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Controls</p>
-                            <p class="slide-subtitle">Manual Controls</p>
-                            <p class="slide-description">For those who want more control, a traditional control system
-                                that lets players steer, brake, and accelerate by hand offers a more hands-on
-                                experience.</p>
-                        </div>
-
-                        <div class="slide-image">
-                            <img src="./assets/image/controls-2.png" alt="controls 2">
-                        </div>
-                    </div>
-                </div>
-                <hr class="line-slide">
-                <nav class="slide-pagination">
-                    <button type="button" class="slide-btn-next-prev slide-btn-prev">&lt;</button>
-                    <button type="button" class="slide-btn-next-prev slide-btn-next">&gt;</button>
-                </nav>
-            </section>
-            <section class="carousel carousel-right" id="race-types">
-                <div class="slide-container">
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Race Types</p>
-                            <p class="slide-subtitle">Classic</p>
-                            <p class="slide-description">Standard races in which first place is the objective.</p>
-                        </div>
-
-                        <div class="slide-image">
-                            <img src="./assets/image/race-types-1.png" alt="race types 1">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Race Types</p>
-                            <p class="slide-subtitle">Time Attack</p>
-                            <p class="slide-description">Reach the finish line in a race against the time.</p>
-                        </div>
-
-                        <div class="slide-image">
-                            <img src="./assets/image/race-types-2.png" alt="race types 2">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Race Types</p>
-                            <p class="slide-subtitle">Hunted</p>
-                            <p class="slide-description">Stay clear of police cruisers and cross the finish line in the
-                                allotted amount of time.</p>
-                        </div>
-
-                        <div class="slide-image">
-                            <img src="./assets/image/race-types-3.png" alt="race types 3">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Race Types</p>
-                            <p class="slide-subtitle">Slipstream</p>
-                            <p class="slide-description">Gain speed by driving in the slipstream of other cars.</p>
-                        </div>
-
-                        <div class="slide-image">
-                            <img src="./assets/image/race-types-4.png" alt="race types 4">
-                        </div>
-                    </div>
-                </div>
-                <hr class="line-slide">
-                <nav class="slide-pagination">
-                    <button type="button" class="slide-btn-next-prev slide-btn-prev">&lt;</button>
-                    <button type="button" class="slide-btn-next-prev slide-btn-next">&gt;</button>
-                </nav>
-            </section>
-            <section class="carousel carousel-left" id="race-types">
-                <div class="slide-container">
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Car Customization and Upgrades</p>
-                            <p class="slide-subtitle">Blueprints</p>
-                            <p class="slide-description">To unlock and improve automobiles, gather blueprints. For each
-                                automobile to be upgraded or unlocked, a specific amount of blueprints must be
-                                collected.</p>
-                        </div>
-
-                        <div class="slide-image">
-                            <img src="./assets/image/car-customization-upgrades-1.png"
-                                alt="car customization upgrades 1">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Car Customization and Upgrades</p>
-                            <p class="slide-subtitle">Customization</p>
-                            <p class="slide-description">Make your automobiles seem different by adding decals, rims,
-                                and paint jobs to give them a unique style.</p>
-                        </div>
-
-                        <div class="slide-image">
-                            <img src="./assets/image/car-customization-upgrades-2.png"
-                                alt="car customization upgrades 2">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <p class="slide-title">Car Customization and Upgrades</p>
-                            <p class="slide-subtitle">Performance Upgrades</p>
-                            <p class="slide-description">Improve the top speed, acceleration, handling, and nitro
-                                efficiency of your cars to enhance performance on the track.</p>
-                        </div>
-
-                        <div class="slide-image">
-                            <img src="./assets/image/car-customization-upgrades-3.png"
-                                alt="car customization upgrades 3">
-                        </div>
-                    </div>
-                </div>
-                <hr class="line-slide">
-                <nav class="slide-pagination">
-                    <button type="button" class="slide-btn-next-prev slide-btn-prev">&lt;</button>
-                    <button type="button" class="slide-btn-next-prev slide-btn-next">&gt;</button>
-                </nav>
-            </section>
+                    <hr class="line-slide">
+                    <nav class="slide-pagination">
+                        <button type="button" class="slide-btn-next-prev slide-btn-prev">&lt;</button>
+                        <button type="button" class="slide-btn-next-prev slide-btn-next">&gt;</button>
+                    </nav>
+                </section>
+            </div>
 
             <footer>
-                <div class="footer-branding">
+                <div class="footer-branding container">
                     <div class="socmed-store">
                         <div class="official-account">
                             <p class="font-semibold font-lg">Official Account</p>
@@ -315,13 +331,13 @@
                         </div>
                     </div>
                     <div class="footer-logo">
-                        <img src="./assets/image/logo.png" alt="">
+                        <img src="./assets/image/logo.png" class="logo-img" alt="logo">
                     </div>
                 </div>
                 <hr>
-                <div class="footer-copyright">
+                <div class="footer-copyright container">
                     <div class="left-content">
-                        <img src="./assets/icon/logo-gameloft.svg" alt="">
+                        <img class="logo-gameloft" src="./assets/icon/logo-gameloft.svg" alt="logo-gameloft">
                         <div class="term-policy">
                             <img src="./assets/icon/caret-right.svg" alt="">
                             <p>Terms</p>

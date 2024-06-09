@@ -1,3 +1,11 @@
+.container {
+    padding-inline: 1rem;
+}
+
+.h-full {
+    height: 100%;
+}
+
 .hidden {
     display: none !important;
 }
@@ -34,19 +42,19 @@
 }
 
 .font-sm {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .font-md {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
 .font-lg {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .font-xl {
-    font-size: 3rem;
+    font-size: 1.7rem;
 }
 
 .leading-normal {
@@ -85,5 +93,75 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {
+    .font-sm {
+        font-size: 1.1rem;
+    }
+
+    .font-md {
+        font-size: 1.2rem;
+    }
+
+    .font-lg {
+        font-size: 2rem;
+    }
+
+    .font-xl {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .font-sm {
+        font-size: 1.3rem;
+    }
+
+    .font-md {
+        font-size: 1.5rem;
+    }
+
+    .font-lg {
+        font-size: 2.3rem;
+    }
+
+    .font-xl {
+        font-size: 2.7rem;
+    }
+
+    .container {
+        padding-inline: 4rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .font-sm {
+        font-size: 1.5rem;
+    }
+
+    .font-md {
+        font-size: 1.7rem;
+    }
+
+    .font-lg {
+        font-size: 2.5rem;
+    }
+
+    .font-xl {
+        font-size: 3rem;
+    }
+
+    .container {
+        padding-inline: 4.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        padding-inline: 5rem;
     }
 }
