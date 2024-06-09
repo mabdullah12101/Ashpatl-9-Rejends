@@ -9,6 +9,7 @@ a {
 
 button {
     cursor: pointer;
+    font-family: inherit;
 }
 
 img {
@@ -80,8 +81,8 @@ header {
 
 .btn-play-now {
     margin-top: 20px;
-    padding-block: 20px;
-    padding-inline: 100px;
+    padding-block: 10px;
+    padding-inline: 70px;
     display: block;
     border: none;
     background-color: #C40C0C;
@@ -119,7 +120,7 @@ header {
 
 .carousel {
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .slide-container {
@@ -140,6 +141,7 @@ header {
     height: max-content;
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     gap: 30px;
     transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
 }
@@ -302,11 +304,6 @@ footer {
 }
 
 @media (min-width: 640px) {
-    .btn-play-now {
-        padding-block: 20px;
-        padding-inline: 70px;
-    }
-
     .carousel-right {
         .line-slide {
             margin-right: -1rem;
@@ -324,7 +321,7 @@ footer {
     }
 
     .slide-container {
-        height: 360px;
+        height: 310px;
     }
 
     .slide {
@@ -352,6 +349,10 @@ footer {
         width: 50%;
     }
 
+    .slide-btn-pagination {
+        width: 40px;
+    }
+
     .icon-socmed {
         height: 30px;
     }
@@ -372,12 +373,16 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .btn-play-now {
-        padding-inline: 80px;
-    }
-
     .icon-socmed {
         height: 40px;
+    }
+
+    .slide-container {
+        height: 340px;
+    }
+
+    .slide-btn-pagination {
+        width: 50px;
     }
 
     .nav-store {
@@ -391,7 +396,8 @@ footer {
     }
 
     .btn-play-now {
-        padding-inline: 100px;
+        padding-inline: 80px;
+        font-size: 2.3rem;
     }
 
     .carousel-right {
@@ -432,6 +438,12 @@ footer {
         width: 630px;
     }
 
+    .btn-play-now {
+        font-size: 2.5rem;
+        padding-block: 20px;
+        padding-inline: 100px;
+    }
+
     .carousel-right {
         .line-slide {
             margin-right: -4.5rem;
@@ -445,15 +457,19 @@ footer {
     }
 
     .slide-container {
-        height: 440px;
+        height: 410px;
     }
 
     .slide-content {
-        gap: 5rem;
+        gap: 4rem;
     }
 
     .icon-socmed {
         height: 50px;
+    }
+
+    .nav-socmed {
+        gap: 25px;
     }
 
     .nav-store {
@@ -482,5 +498,9 @@ footer {
         .line-slide {
             margin-left: -5rem;
         }
+    }
+
+    .slide-container {
+        height: 385px;
     }
 }
