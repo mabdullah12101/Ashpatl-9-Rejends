@@ -1,0 +1,117 @@
+body {
+  width: 100%;
+  background-image: url(../assets/image/news-bg.png);
+  background-color: rgba(15, 15, 15, 0.3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+.content-title {
+  margin: 50px 0 0 30px;
+}
+
+.title {
+  margin-bottom: 35px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 1px solid #ffd369;
+}
+
+.content-game {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 70px 0;
+}
+
+.content-game-wrapper {
+  border-radius: 10px;
+  width: 300px;
+  background: var(--bg-product-desc, #fafafa);
+  padding: 10px;
+}
+
+.content-news-img {
+  width: 100%;
+  height: 220px;
+}
+
+.title-news {
+  margin: 15px 0;
+}
+
+.description-news p {
+  font-size: 17px;
+  text-align: justify;
+}
+
+.date-news {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 17px 0 5px 0;
+}
+
+.content-update {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0;
+}
+
+.content-update-wrapper {
+  width: 650px;
+  background: var(--bg-product-desc, #fafafa);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.title-update h2 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.date-update h3 {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.announcement p {
+  font-size: 20px;
+  margin: 40px 0;
+}
+
+.headline {
+  margin: 30px 0;
+}
+
+.title-headline p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.list-headline {
+  margin: 0 30px;
+}
+
+.list-headline ul {
+  list-style-type: disc;
+}
+
+.list-headline ul li {
+  font-size: 20px;
+}
+
+.list-headline ul li::marker {
+  font-size: 20px;
+}
