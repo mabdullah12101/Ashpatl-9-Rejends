@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let prevIndex;
         let currentIndex;
 
-        if (carousel.classList.contains('carousel-right')) {
-            prevIndex = 0;
-            currentIndex = 0;
-        } else {
+        if (carousel.classList.contains('carousel-left')) {
             prevIndex = slides.length - 1;
             currentIndex = slides.length - 1;
+        } else {
+            prevIndex = 0;
+            currentIndex = 0;
         }
 
         const init = () => {

@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .product-wrapper {
@@ -23,7 +23,7 @@ header {
 }
 
 .product-description {
-    margin-bottom: 75px;
+    margin-bottom: 30px;
 }
 
 .product-card {
@@ -55,7 +55,7 @@ header {
     gap: 20px;
 
     img {
-        height: 50px;
+        max-height: 50px;
     }
 }
 
@@ -75,7 +75,7 @@ header {
     grid-row: 1;
 
     img {
-        height: 260px;
+        max-height: 260px;
     }
 }
 
@@ -89,7 +89,7 @@ header {
 }
 
 .slide-container {
-    height: 735px;
+    height: 645px;
     z-index: 2;
     width: 100%;
     overflow: hidden;
@@ -133,4 +133,56 @@ header {
 
 .slide-btn-pagination-active {
     height: 7px !important;
+}
+
+@media (min-width: 640px) {
+    .product-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .product-description {
+        margin-bottom: 50px;
+    }
+
+    .product-card {
+        width: 280px;
+        grid-row: 1;
+    }
+
+    .product-image {
+        img {
+            height: auto;
+        }
+    }
+
+    .slide-container {
+        height: 420px;
+    }
+}
+
+@media (min-width: 768px) {
+    .slide-container {
+        height: 440px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-card {
+        width: 320px;
+    }
+
+    .slide-container {
+        height: 470px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .product-card {
+        width: 350px;
+    }
+
+    .slide-container {
+        height: 500px;
+    }
 }
