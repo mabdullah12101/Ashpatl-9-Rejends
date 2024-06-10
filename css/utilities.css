@@ -42,6 +42,10 @@
     color: #FFC94A;
 }
 
+.border-orange {
+    border: 1px solid #ffd369;
+}
+
 .font-primary {
     font-family: "Rajdhani", sans-serif;
     font-style: normal;
@@ -75,6 +79,10 @@
 
 .font-bold {
     font-weight: 700;
+}
+
+.font-xs {
+    font-size: 0.7rem;
 }
 
 .font-sm {
@@ -131,6 +139,10 @@
 @media (min-width: 640px) {}
 
 @media (min-width: 768px) {
+    .font-xs {
+        font-size: 0.8rem;
+    }
+
     .font-sm {
         font-size: 1.1rem;
     }
@@ -149,6 +161,10 @@
 }
 
 @media (min-width: 1024px) {
+    .font-xs {
+        font-size: 0.9rem;
+    }
+
     .font-sm {
         font-size: 1.3rem;
     }
@@ -171,6 +187,10 @@
 }
 
 @media (min-width: 1280px) {
+    .font-xs {
+        font-size: 1rem;
+    }
+
     .font-sm {
         font-size: 1.5rem;
     }
