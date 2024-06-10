@@ -1,21 +1,3 @@
-*[disabled] {
-    cursor: not-allowed;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-button {
-    cursor: pointer;
-    font-family: inherit;
-}
-
-img {
-    vertical-align: middle;
-}
-
 .logo-img {
     width: 100%;
 }
@@ -36,98 +18,9 @@ header {
     object-position: center;
 }
 
-.nav-item {
-    position: relative;
-    padding-block: 5px;
-}
-
-.nav-item::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background-color: #FFD369;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-left: 2px;
-    transition: width 0.4s ease-in-out;
-}
-
-.nav-item:hover::after,
-.nav-item-active::after {
-    width: 85%;
-}
-
 .header-content {
-    display: none;
     position: relative;
     z-index: 1;
-
-    .nav-items {
-        padding-top: 1.5rem;
-        display: flex;
-        justify-content: end;
-        gap: 2.5rem;
-    }
-}
-
-.btn-menu {
-    padding-top: 1.5rem;
-    display: block;
-    position: relative;
-    z-index: 2;
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
-}
-
-.nav-mobile {
-    visibility: hidden;
-    background-color: rgba(15, 15, 15, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-}
-
-.nav-mobile-wrapper {
-    margin-left: auto;
-    width: 50%;
-    height: 100%;
-    background-color: #0F0F0F;
-    padding: 40px;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in-out;
-
-    .nav-items {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .nav-item {
-        width: max-content;
-    }
-}
-
-.nav-mobile-show {
-    visibility: visible;
-
-    .nav-mobile-wrapper {
-        transform: translateX(0%);
-    }
-}
-
-.close-wrapper {
-    text-align: end;
-    margin-bottom: 40px;
-}
-
-.close-btn {
-    background-color: transparent;
-    border: none;
 }
 
 .header-brand {
@@ -207,7 +100,6 @@ header {
 }
 
 .slide-content {
-
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -283,93 +175,14 @@ header {
 }
 
 footer {
-    background-color: rgba(15, 15, 15, 0.80);
     position: absolute;
-    width: 100%;
     bottom: 0;
     left: 0;
-}
-
-.footer-branding {
-    padding-block: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.socmed-store {
-    width: 50%;
-}
-
-.official-account {
-    margin-bottom: 80px;
-}
-
-.nav-socmed {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.icon-socmed {
-    height: 30px;
-}
-
-.nav-store {
-    margin-top: 30px;
-    display: grid;
-    align-items: center;
-    gap: 1rem;
-    grid-template-columns: repeat(2, 80px);
-    grid-template-rows: repeat(2, minmax(min-content, max-content));
-}
-
-.nav-store img {
-    width: 100%;
-}
-
-.footer-logo {
-    width: 50%;
-}
-
-.footer-copyright {
-    margin-bottom: 7px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .left-content {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-
-        .term-policy {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-
-            img {
-                width: 7px;
-            }
-        }
-    }
-}
-
-.logo-gameloft {
-    display: none;
 }
 
 @media (min-width: 640px) {
     .logo-img {
         width: 450px;
-    }
-
-    .header-content {
-        display: block;
-    }
-
-    .btn-menu {
-        display: none;
     }
 
     .carousel-right {
@@ -420,42 +233,15 @@ footer {
     .slide-btn-pagination {
         width: 40px;
     }
-
-    .icon-socmed {
-        height: 30px;
-    }
-
-    .nav-store {
-        grid-template-columns: repeat(2, 100px);
-    }
-
-    .logo-gameloft {
-        display: block;
-        width: 150px;
-    }
-
-    .term-policy {
-        img {
-            width: 10px;
-        }
-    }
 }
 
 @media (min-width: 768px) {
-    .icon-socmed {
-        height: 40px;
-    }
-
     .slide-container {
         height: 340px;
     }
 
     .slide-btn-pagination {
         width: 50px;
-    }
-
-    .nav-store {
-        grid-template-columns: repeat(2, 130px);
     }
 }
 
@@ -488,18 +274,6 @@ footer {
     .slide-content {
         gap: 4rem;
     }
-
-    .icon-socmed {
-        height: 45px;
-    }
-
-    .nav-store {
-        grid-template-columns: repeat(2, 140px);
-    }
-
-    .logo-gameloft {
-        width: 160px;
-    }
 }
 
 @media (min-width: 1280px) {
@@ -531,28 +305,6 @@ footer {
 
     .slide-content {
         gap: 4rem;
-    }
-
-    .icon-socmed {
-        height: 50px;
-    }
-
-    .nav-socmed {
-        gap: 25px;
-    }
-
-    .nav-store {
-        grid-template-columns: repeat(2, 150px);
-    }
-
-    .logo-gameloft {
-        width: 180px;
-    }
-
-    .term-policy {
-        img {
-            width: 15px;
-        }
     }
 }
 

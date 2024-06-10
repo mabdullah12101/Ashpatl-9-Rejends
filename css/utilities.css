@@ -2,6 +2,10 @@
     padding-inline: 1rem;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .h-full {
     height: 100%;
 }
@@ -14,9 +18,29 @@
     color: white;
 }
 
+.color-black {
+    color: black;
+}
+
+.color-red {
+    color: #C40C0C;
+}
+
+.color-light-green {
+    color: #7ABA78;
+}
+
 .font-primary {
     font-family: "Rajdhani", sans-serif;
     font-style: normal;
+}
+
+.font-taviraj {
+    font-family: "Taviraj", serif;
+}
+
+.font-italic {
+    font-style: italic;
 }
 
 .font-light {
@@ -70,16 +94,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Full screen height */
     background-color: #ffffff;
-    /* Adjust the background color if needed */
 }
 
 .loading-spinner {
     border: 16px solid #f3f3f3;
-    /* Light grey */
     border-top: 16px solid #3498db;
-    /* Blue */
     border-radius: 50%;
     width: 120px;
     height: 120px;

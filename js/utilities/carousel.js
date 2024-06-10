@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const carousels = document.querySelectorAll('.carousel')
 
     carousels.forEach((carousel) => {
-        const slideContainer = carousel.querySelector('.slide-container')
         const slides = carousel.querySelectorAll('.slide')
         const slidePagination = carousel.querySelector('.slide-pagination')
         const slideBtnPrev = carousel.querySelector('.slide-btn-prev')

@@ -1,0 +1,136 @@
+body {
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.30), rgba(15, 15, 15, 0.30)), url(../assets/image/bg-product.svg);
+    background-color: rgba(15, 15, 15, 0.30);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+.product-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.product-title {
+    margin-bottom: 25px;
+}
+
+.product-description {
+    margin-bottom: 75px;
+}
+
+.product-card {
+    margin: auto;
+    grid-row: 2;
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250, 0.90);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.product-mark {
+    position: absolute;
+    top: -16%;
+    left: -12%;
+
+    img {
+        width: 180px;
+    }
+}
+
+.product-card-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+        height: 50px;
+    }
+}
+
+.product-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product-card-class {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.product-image {
+    grid-row: 1;
+
+    img {
+        height: 260px;
+    }
+}
+
+.product-image-content {
+    width: 100%;
+}
+
+.carousel {
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.slide-container {
+    height: 735px;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-active {
+    transform: translateX(0%) !important;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.slide-pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.slide-btn-next-prev {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 4rem;
+}
+
+.slide-btn-pagination {
+    width: 50px;
+    height: 4px;
+    padding: 0;
+    border: none;
+    color: transparent;
+    background-color: #FFD369;
+}
+
+.slide-btn-pagination-active {
+    height: 7px !important;
+}
