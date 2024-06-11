@@ -13,7 +13,7 @@ header {
 
 /* title */
 .content-title {
-    margin: 50px 0 0 30px;
+    margin-top: 70px;
 }
 
 .title {
@@ -34,33 +34,25 @@ header {
 }
 
 .form-subscription-wrapper {
+    box-sizing: border-box;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 600px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 50px;
     background-color: #fff;
+    gap: 30px;
 }
 
 .title-form h2 {
     text-align: center;
-    margin: 10px 0;
 }
 
-.input-form {
-    margin: 15px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
-.input-form input {
-    margin: 8px 0;
-    height: 30px;
+.text-input {
     border: 1px solid black;
     border-radius: 5px;
-    padding-left: 10px;
+    padding-block: 10px;
+    padding-inline: 20px;
     font-weight: bold;
 }
 
@@ -72,7 +64,14 @@ header {
 .date-input {
     display: flex;
     align-items: center;
-    margin: 18px 0;
+}
+
+.date-input {
+    input {
+        color: grey;
+        border: none;
+        border-bottom: 1px solid black;
+    }
 }
 
 .date-input h3 {
@@ -93,7 +92,6 @@ label {
 .check-agree {
     display: flex;
     align-items: center;
-    margin: 18px 0;
 }
 
 .check-agree input {
@@ -109,8 +107,7 @@ label {
 
 /* benefits */
 .benefits {
-    margin: 30px 20px;
-    text-align: justify;
+    margin-top: 30px;
 }
 
 .benefits-title h3 {
@@ -133,31 +130,30 @@ label {
 
 /* terms and conditions */
 .terms-conditions {
-    margin: 30px 20px;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 .title-terms-conditions {
     margin-bottom: 10px;
 }
 
-.subtitle-terms-conditions {
-    text-align: justify;
-}
-
 /* end terms and conditions */
 
-@media screen and (min-width: 400px) {
-
-    .benefits,
-    .terms-conditions {
-        margin: 30px 50px;
+@media (min-width: 640px) {
+    .form-subscription-wrapper {
+        width: 540px;
     }
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 1024px) {
+    .form-subscription-wrapper {
+        width: 650px;
+    }
+}
 
-    .benefits,
-    .terms-conditions {
-        margin: 30px 80px;
+@media (min-width: 1280px) {
+    .form-subscription-wrapper {
+        width: 700px;
     }
 }
