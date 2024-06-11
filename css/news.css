@@ -51,10 +51,6 @@ header {
   flex-grow: 1;
 }
 
-.description-news p {
-  text-align: justify;
-}
-
 .date-news {
   display: flex;
   justify-content: space-between;

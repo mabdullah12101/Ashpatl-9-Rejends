@@ -1,0 +1,140 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-video {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    padding-top: 50px;
+    background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.45), rgba(15, 15, 15, 0.45)), url(../assets/image/bg-event.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.events {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    column-gap: 20px;
+}
+
+.events-card {
+    background-color: white;
+    border-radius: 10px;
+    padding-block: 15px;
+    padding-inline: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.events-image {
+    img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.events-description {
+    flex-grow: 1;
+}
+
+.events-key-highlight {
+    margin-top: 20px;
+
+    ul {
+        margin-top: 5px;
+        margin-left: 20px;
+        list-style: disc;
+    }
+}
+
+.events-date {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: auto;
+}
+
+.statistics {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.statistic-card {
+    background-color: white;
+    border-radius: 10px;
+    padding-block: 30px;
+
+    img {
+        height: 80px;
+        margin-bottom: 30px;
+    }
+}
+
+.sponsors-description {
+    margin-block: 40px;
+}
+
+.sponsors-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 100px;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 640px) {
+    .events {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .statistics {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sponsors-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .events {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .statistics {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .sponsors-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
